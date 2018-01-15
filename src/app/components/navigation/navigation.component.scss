@@ -1,11 +1,20 @@
 
-
+.navigation-wrapper{
+    background-color: #EF3A42;
+}
 .navigation-item{
+    background-color: #EF3A42;
+    transition: background-color 500ms ease;
+    -webkit-transition: background-color 500ms ease;
     text-align: center;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2em;
 }
 
 .navigation-item:hover{
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(128,0,6,0.5);
+    cursor: pointer;
 }
 
 ul{
