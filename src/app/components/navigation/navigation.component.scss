@@ -1,0 +1,20 @@
+
+
+.navigation-item{
+    text-align: center;
+}
+
+.navigation-item:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+ul{
+    list-style: none;
+    li{
+        display: inline-block;
+        border-right: solid thin black;
+        border-right: solid thin black;
+        text-align: center;
+
+    }
+}
