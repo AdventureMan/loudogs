@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {} from '../../shared';
+import { NavigationRoutes, NavigationRoute } from '../../shared';
 
 @Component({
   selector: 'app-navigation',
@@ -9,13 +9,7 @@ import {} from '../../shared';
 })
 export class NavigationComponent implements OnInit {
 
-  navigationRoutes: Array<string> =[
-    'Home',
-    'About',
-    'Menu',
-    'Gallery',
-    'Lou Gear'
-  ]
+  navigationRoutes: Array<NavigationRoute> = NavigationRoutes;
 
   constructor() { }
 
