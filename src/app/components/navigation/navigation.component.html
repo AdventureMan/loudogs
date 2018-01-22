@@ -1,8 +1,11 @@
-  <div class="navigation-wrapper">
-    <div class="row">
+<div class="navigation-wrapper">
+  <div class="row">
 
-      <div class="col" *ngFor="let route of navigationRoutes">
-        <div class="navigation-item">{{route.label}}</div>
-      </div>
+    <div class="col" *ngFor="let route of navigationRoutes">
+      <div class="navigation-item" routerLink="/{{route.route}}">{{route.label}}</div>
     </div>
+  </div>
 </div>
+<!-- <div class="row"> -->
+<router-outlet></router-outlet>
+<!-- </div> -->

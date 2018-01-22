@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.navigation-item:focus {
+    outline:0;
+}
+
 ul{
     list-style: none;
     li{
