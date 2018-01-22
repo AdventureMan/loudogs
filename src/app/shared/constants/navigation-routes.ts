@@ -25,13 +25,13 @@ export const NavigationRoutes: Array<NavigationRoute> = [
             }
         ]
     },
-    {
-        label: 'Locations',
-        route: 'locations',
-        active: true,
-        hidden: false
+    // {
+    //     label: 'Locations',
+    //     route: 'locations',
+    //     active: true,
+    //     hidden: false
 
-    },
+    // },
     {
         label: 'Menu',
         route: 'menu',
