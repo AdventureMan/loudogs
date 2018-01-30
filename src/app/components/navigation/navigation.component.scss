@@ -1,0 +1,73 @@
+@media only screen and (max-width: 840px){
+    .col{
+        width: 100%;
+        flex-basis: initial;
+    }
+}
+
+.navigation-wrapper{
+    background-color: #EF3A42;
+}
+.navigation-item{
+    background-color: #EF3A42;
+    transition: background-color 500ms ease;
+    -webkit-transition: background-color 500ms ease;
+    text-align: center;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2em;
+}
+
+.navigation-item:hover{
+    background-color: rgba(128,0,6,0.5);
+    cursor: pointer;
+}
+
+.navigation-item:focus {
+    outline:0;
+}
+
+ul{
+    list-style: none;
+    li{
+        display: inline-block;
+        border-right: solid thin black;
+        border-right: solid thin black;
+        text-align: center;
+
+    }
+}
+.mobile-nav-items-wrapper-wrapper{
+    background-color: #EF3A42;
+    position: absolute;
+    z-index: 1;
+}
+
+.mobile-nav-wrapper{
+    height: 5vh;
+}
+
+.mobile-menu{
+        height: 5vh;
+        width: 2.5em;
+        position: absolute;
+        z-index: 2;
+    
+    
+    .mobile-menu:hover{
+        cursor: pointer;
+    }
+    
+    .hamburger{
+        background-color: #EF3A42;
+        color: #EF3A42;
+        // width: 5vw;
+        height: 0.5em;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border-radius: 3px;
+        display: block
+    }
+}
+
+// }
