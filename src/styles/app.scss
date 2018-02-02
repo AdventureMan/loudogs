@@ -1,0 +1,60 @@
+// @import '~node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.header{
+    height: 80vh;
+    .header-text{
+        color: white;
+        text-align: center;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 5em;
+        padding-top:3em;
+    }
+}
+
+.content{
+    padding-left: 50px;
+    padding-right: 50px;
+    @media only screen and (max-width: 840px){
+        .content-title{
+            font-size: 1.5rem;
+        }
+    }
+    .content-title{
+        height: 15vh;
+        text-align: center;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: calc(100% + 2vw);
+    }
+    .content-body{
+        height: 85vh;
+        font-family: 'Fjalla One', sans-serif;
+        text-align:  justify;
+        @media only screen and (min-width: 840px){
+            .content-body-paragraph{
+                padding-left: 8rem;
+                padding-right: 8rem;
+                font-size: calc(100% + 1vw)
+            }
+        }
+        .content-body-paragraph{
+            font-size: calc(100% + 1vw)
+        }
+        .content-body-bang{
+            font-family: 'Gloria Hallelujah', cursive;
+            color: #EF3A42;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+
+.chevron-custom{
+    text-align: center;
+    font-size: 5em;
+    height: 20vh;
+}
+
+.chevron-custom:hover{
+    cursor: pointer;
+}
