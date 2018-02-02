@@ -10,6 +10,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AboutComponent } from './components/about/about.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { LougearComponent } from './components/lougear/lougear.component';
+import { AboutHeaderComponent } from './components/about/about-header/about-header.component';
+import { AboutContentComponent } from './components/about/about-content/about-content.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { LougearComponent } from './components/lougear/lougear.component';
     MenuComponent,
     AboutComponent,
     GalleryComponent,
-    LougearComponent
+    LougearComponent,
+    AboutHeaderComponent,
+    AboutContentComponent
   ],
   imports: [
     BrowserModule,
