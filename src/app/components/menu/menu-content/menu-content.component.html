@@ -1,0 +1,30 @@
+<div class="content">
+
+  <div class="content-title">
+    Loyal Dogs. Local Dogs. Your Dogs.
+  </div>
+  <div class="content-body">
+    <div class="row">
+      <div class="col-md-6">
+        <div *ngFor="let item of loyalDogs" class="col-md-12">
+          <div class="menu-item-header">
+            {{item.title}}
+          </div>
+          <div class="menu-item-desc">
+            {{item.description}}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div *ngFor="let item of localDogs" class="col-md-12">
+          <div class="menu-item-header">
+            {{item.title}}
+          </div>
+          <div class="menu-item-desc">
+            {{item.description}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
