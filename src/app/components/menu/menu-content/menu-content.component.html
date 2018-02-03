@@ -4,8 +4,9 @@
     Loyal Dogs. Local Dogs. Your Dogs.
   </div>
   <div class="content-body">
-    <div class="row">
+    <div class="row centerer">
       <div class="col-md-6">
+        <h1>{{loyalHeader}}</h1>
         <div *ngFor="let item of loyalDogs" class="col-md-12">
           <div class="menu-item-header">
             {{item.title}}
@@ -16,6 +17,7 @@
         </div>
       </div>
       <div class="col-md-6">
+        <h1>{{localHeader}}</h1>
         <div *ngFor="let item of localDogs" class="col-md-12">
           <div class="menu-item-header">
             {{item.title}}
