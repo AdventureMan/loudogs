@@ -14,6 +14,7 @@ import { AboutHeaderComponent } from './components/about/about-header/about-head
 import { AboutContentComponent } from './components/about/about-content/about-content.component';
 import { MenuHeaderComponent } from './components/menu/menu-header/menu-header.component';
 import { MenuContentComponent } from './components/menu/menu-content/menu-content.component';
+import { FullSizeComponent } from './components/gallery/full-size/full-size.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MenuContentComponent } from './components/menu/menu-content/menu-conten
     AboutHeaderComponent,
     AboutContentComponent,
     MenuHeaderComponent,
-    MenuContentComponent
+    MenuContentComponent,
+    FullSizeComponent
   ],
   imports: [
     BrowserModule,

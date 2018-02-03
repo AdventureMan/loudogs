@@ -1,0 +1,23 @@
+.gallery-wrapper{
+// padding-left: 10vw;
+// padding-right: 10vw;
+padding: 10vh 10vw;
+// width: 80vw;
+
+    ul{
+        list-style: none;
+        padding: 0px;
+        text-align: center;
+        li{
+            display: inline-block;
+            height: 15rem;
+            width: 15rem;
+        }
+    }
+}
+
+.image-wrapper{
+    margin: 2rem;
+    border: solid thin rgba(0,0,0,0.4);
+
+}
