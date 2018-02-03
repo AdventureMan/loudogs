@@ -12,6 +12,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { LougearComponent } from './components/lougear/lougear.component';
 import { AboutHeaderComponent } from './components/about/about-header/about-header.component';
 import { AboutContentComponent } from './components/about/about-content/about-content.component';
+import { MenuHeaderComponent } from './components/menu/menu-header/menu-header.component';
+import { MenuContentComponent } from './components/menu/menu-content/menu-content.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AboutContentComponent } from './components/about/about-content/about-co
     GalleryComponent,
     LougearComponent,
     AboutHeaderComponent,
-    AboutContentComponent
+    AboutContentComponent,
+    MenuHeaderComponent,
+    MenuContentComponent
   ],
   imports: [
     BrowserModule,
