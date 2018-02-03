@@ -1,7 +1,7 @@
 import {Menu} from './menu.interface'
 
 export interface MenuSections {
-    title: string;
+    title?: string;
     items: Menu[];
 
 }

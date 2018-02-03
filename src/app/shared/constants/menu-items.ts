@@ -54,7 +54,16 @@ export const MenuItems: Array<MenuSections> = [
     {
         title: 'Extra Eats',
         items: [
-
+            {
+                title: 'The Original Walking Taco',
+                description: 'our take on a hard shell taco. fritos, homemade seasoned ground beef, cheddar, homemade pica de gallo'
+            },
+            {
+                title: 'Fritos and Herrs Chips',
+            },
+            {
+                title: 'Ice Cold Drinks'
+            }
         ]
     }
 ]
