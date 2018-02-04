@@ -7,7 +7,9 @@
 </div>
 
 <div *ngIf="fullSize" class="full-size">
-  
-  <app-full-size [image]="currentImage"></app-full-size>
+  <button class="btn btn-sm btn-custom" (click)="fullSize = false">Close</button>
+  <div class="full-size-wrapper">
+    <app-full-size [image]="currentImage"></app-full-size>
+  </div>
 
 </div>

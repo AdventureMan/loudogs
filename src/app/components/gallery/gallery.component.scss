@@ -35,6 +35,19 @@ padding: 10vh 10vw;
     left: 25vw;
 }
 
+.full-size-wrapper{
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.4);
+    padding: 0.2rem;
+}
+
+.btn-custom{
+    border-radius: 100px;
+}
+.btn-custom:hover{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 840px){
     .full-size{
         position: fixed;
