@@ -8,7 +8,7 @@ import { Image } from '../../../shared/index';
 })
 export class FullSizeComponent implements OnInit {
 
-  @Input() image: Image
+  @Input() image: string;
 
   constructor() { }
 

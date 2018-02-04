@@ -1,23 +1,13 @@
 <div class="gallery-wrapper">
-
   <ul>
-    <li class="image-wrapper">
-
-    </li>
-    <li class="image-wrapper">
-
-    </li>
-    <li class="image-wrapper">
-
-    </li>
-    <li class="image-wrapper">
-
-    </li>
-    <li class="image-wrapper">
-
-    </li>
-    <li class="image-wrapper">
-
+    <li *ngFor="let image of images" class="image-wrapper" (click)="showFullSize(image.path)">
+      <img src="{{image.path}}">
     </li>
   </ul>
+</div>
+
+<div *ngIf="fullSize" class="full-size">
+  
+  <app-full-size [image]="currentImage"></app-full-size>
+
 </div>
