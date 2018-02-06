@@ -1,0 +1,72 @@
+.full-size-background{
+    // height: 100vh;
+    // width: 100vw;
+    // background: rgba(0,0,0,0.3);
+    // position: absolute;
+    // z-index: 10;
+    // top: 0;
+    // overflow: hidden;
+    // filter: blur(50px)
+}
+
+@media only screen and (max-width: 840px){
+    .full-size-wrapper{
+        max-width: 90vw !important;
+    }
+}
+
+.full-size-wrapper{
+    max-width: 50vw;
+    margin: auto;
+    position: relative;
+    top: 15vh;
+    .slides{
+        display: block;
+        background-color: rgba(255,255,255,0.9);
+    }
+    img{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .btn-slide-back{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        border: none;
+        background-color: rgba(0,0,0,0.3);
+        animation: background-color ease-in;
+        height: 100%;
+
+    }
+    .btn-slide-next{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        border: none;
+        background-color: rgba(0,0,0,0.3);
+        animation: background-color ease-in;
+        height: 100%
+    }
+    .btn-slide-back:hover{
+        background-color: rgba(0,0,0,0.4);
+        animation: background-color ease-in;
+    }
+
+    .btn-slide-next:hover{
+        background-color: rgba(0,0,0,0.4);
+        animation: background-color ease-in;
+
+    }
+}
+
+.nav-forward {
+    float: right;
+    width: 2rem;
+    background-color: transparent;
+}
+.nav-backward {
+    float: left;
+    widows: 2rem;
+    background-color: transparent;
+}

@@ -11,10 +11,10 @@ import { Image } from '../../shared/index';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
-  imagePath: string = ''
   images: Array<Image> = [];
   fullSize: boolean = false;
   currentImage: string = null;
+  currentIndex: number;
 
   constructor(
     private _http: HttpClient
@@ -31,19 +31,31 @@ export class GalleryComponent implements OnInit {
       next: (images: any) => {
         if (images != null && images != undefined) {
           this.images = images.data;
-          console.log(this.images);
-
         }
       }
     });
+  }
+
+  showHideFullSize(){    
+    if(this.fullSize = null){
+      console.log('logasd');
+      
+      this.fullSize = true;
+    } else if (this.fullSize = false){
+      this.fullSize = true;
+    } else {
+      this.fullSize = false;
+    }
   }
 
   showFullSize(path: string){
     
     this.fullSize = true;
     this.currentImage = path;
-    console.log('Going full size', this.currentImage);
+  }
 
+  setFullSize(fullsize: boolean){
+    this.fullSize = fullsize;
   }
 
 

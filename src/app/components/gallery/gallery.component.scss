@@ -28,19 +28,6 @@ padding: 10vh 10vw;
     cursor: pointer;
 }
 
-.full-size{
-    position: fixed;
-    z-index: 1000;
-    top: 25vh;
-    left: 25vw;
-}
-
-.full-size-wrapper{
-    background-color: white;
-    border: 2px solid rgba(0,0,0,0.4);
-    padding: 0.2rem;
-}
-
 .btn-custom{
     border-radius: 100px;
 }
@@ -48,11 +35,16 @@ padding: 10vh 10vw;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 840px){
-    .full-size{
-        position: fixed;
-        z-index: 1000;
-        top: 25vh;
-        left: 5vw;
-    }
+.gallery-blur{
+    filter: blur(5px);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100000;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+}
+
+.full-size{
+    z-index: 100000;
+    position: relative
 }
