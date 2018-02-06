@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -14,6 +15,7 @@ import { AboutHeaderComponent } from './components/about/about-header/about-head
 import { AboutContentComponent } from './components/about/about-content/about-content.component';
 import { MenuHeaderComponent } from './components/menu/menu-header/menu-header.component';
 import { MenuContentComponent } from './components/menu/menu-content/menu-content.component';
+import { FullSizeComponent } from './components/gallery/full-size/full-size.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { MenuContentComponent } from './components/menu/menu-content/menu-conten
     AboutHeaderComponent,
     AboutContentComponent,
     MenuHeaderComponent,
-    MenuContentComponent
+    MenuContentComponent,
+    FullSizeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

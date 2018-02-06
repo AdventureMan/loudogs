@@ -1,3 +1,14 @@
-<p>
-  gallery works!
-</p>
+<div [ngClass]="{'gallery-blur': fullSize}">
+  <div class="gallery-wrapper">
+    <ul>
+      <li *ngFor="let image of images" class="image-wrapper" (click)="showFullSize(image.path)">
+        <img src="{{image.path}}">
+      </li>
+    </ul>
+  </div>
+
+</div>
+<div *ngIf="fullSize" class="full-size">
+  <!-- <button class="btn btn-sm btn-custom" (click)="fullSize = false">Close</button> -->
+  <app-full-size [image]="currentImage" [gallery]="images" (onMinimize)="setFullSize($event)"></app-full-size>
+</div>

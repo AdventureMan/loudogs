@@ -22,7 +22,6 @@ export class MenuContentComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.loyalDogs);
     
   }
 
