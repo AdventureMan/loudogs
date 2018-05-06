@@ -1,0 +1,14 @@
+.menu-item {
+    text-align: center;
+    background-color: #EF3A42;
+    color: white;
+    transition: background-color 300ms ease;
+    -webkit-transition: background-color 300ms ease;
+    height: 5vh;
+    padding-top: 0.5%;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    background-color: #b32b31;
+}
