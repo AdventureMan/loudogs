@@ -12,3 +12,10 @@
     cursor: pointer;
     background-color: #b32b31;
 }
+
+a:hover{
+    color: white;
+    text-decoration: initial;
+    cursor: pointer;
+    background-color: #b32b31;
+}
