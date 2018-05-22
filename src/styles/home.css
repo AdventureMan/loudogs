@@ -36,9 +36,9 @@
     transition: filter 100ms ease-in-out; */
 }
 
-.main-shop:hover{
+/* .main-shop:hover{
     filter: blur(0px) grayscale(0%);
-}
+} */
 
 .lou-wall {
     background-image: url('./../img/lou-wall.jpg');
@@ -51,6 +51,6 @@
     transition: filter 100ms ease-in-out; */
 }
 
-.lou-wall:hover {
+/* .lou-wall:hover {
     filter: blur(0px) grayscale(0%);
-}
+} */
