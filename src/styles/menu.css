@@ -1,21 +1,16 @@
-.menu-item {
+.menu-item-header{
     text-align: center;
-    background-color: #EF3A42;
-    color: white;
-    transition: background-color 300ms ease;
-    -webkit-transition: background-color 300ms ease;
-    height: 5vh;
-    padding-top: 0.5%;
+    color: #EF3A42;
 }
 
-.menu-item:hover {
-    cursor: pointer;
-    background-color: #b32b31;
+.menu-item-desc{
+    text-align: center;
+    color: black;
+}
+.centerer{
+    text-align: center;
 }
 
-a:hover{
-    color: white;
-    text-decoration: initial;
-    cursor: pointer;
-    background-color: #b32b31;
+.menu-section{
+    text-align: center;
 }

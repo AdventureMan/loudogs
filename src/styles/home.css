@@ -5,14 +5,14 @@
 
 .top-header {
     background-color: #FFFFFF;
-    height: 75%;
+    height: 100%;
 }
 
 .inner-logo {
     background-image: url('./../img/logo.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: auto;
     height: 100%;
 }
 

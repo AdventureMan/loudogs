@@ -14,6 +14,7 @@
 
   <!-- Tasty Custom Styles -->
   <link rel="stylesheet" type="text/css" href="styles/app.css">
+  <link rel="stylesheet" type="text/css" href="styles/nav.css">
   <link rel="stylesheet" type="text/css" href="styles/menu.css">
   <link rel="stylesheet" type="text/css" href="styles/home.css">
 
@@ -23,28 +24,26 @@
 
 <body>
   <div class="container-fluid">
-    <div class="row">
-      <a href="#home" class="col-sm menu-item">Home</a>
-      <a href="#about" class="col-sm menu-item">About</a>
-      <a href="#menu" class="col-sm menu-item">Menu</a>
-      <a href="#gallery" class="col-sm menu-item">Gallery</a>
+    <div id="nav" class="row">
+      <a href="#nav" class="col-sm nav-item">Home</a>
+      <a href="#about" class="col-sm nav-item">About</a>
+      <a href="#menu" class="col-sm nav-item">Menu</a>
+      <a href="#gallery" class="col-sm nav-item">Gallery</a>
     </div>
-    <div class="row">
+    <div class="row" id="home">
       <div class="top-wrapper">
         <div class="top-header">
           <div class="inner-logo"></div>
 
         </div>
-        <div class="top-stores">
+        <!-- <div class="top-stores">
           <div class="store-wrapper">
             <a href="#" class="main-shop"></a>
-            <!-- <h4>The Store You Love</h4> -->
           </div>
           <div class="store-wrapper">
-            <!-- <h4>The Lou Wall</h4> -->
             <a href="#" class="lou-wall"></a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="row" id="about">
@@ -65,9 +64,93 @@
         </p>
       </div>
     </div>
-    <!-- <div class="row" id="menu">
-
-    </div> -->
+    <div class="row" id="menu">
+      <h1 class="col-md-12 content-title">Menu</h1>
+      <div class="col">
+        <h1 class="menu-section">Loyal Dogs</h1>
+        <div class="menu-item-header">
+          Lou Dog
+        </div>
+        <div class="menu-item-desc">
+          Lou's german mustard, ketchup, diced onions, and a hint of kraut to taste
+        </div>
+        <div class="menu-item-header">
+          Lassie
+        </div>
+        <div class="menu-item-desc">
+          Homemade mac & cheese, chipotle ketchup
+        </div>
+        <div class="menu-item-header">
+          British Bulldog
+        </div>
+        <div class="menu-item-desc">
+          Chedder, mom's homemade chili
+        </div>
+        <div class="menu-item-header">
+          Toto
+        </div>
+        <div class="menu-item-desc">
+          Honey mustard, bacon crumbles, diced onions
+        </div>
+        <div class="menu-item-header">
+          Rin Tin Tin
+        </div>
+        <div class="menu-item-desc">
+          Lou's german mustard, kraut, diced onions
+        </div>
+      </div>
+      <div class="col">
+        <h1 class="menu-section">Local Dogs</h1>
+        <div class="menu-item-header">
+          38th & Pleasure
+        </div>
+        <div class="menu-item-desc">
+          Cheddar, bacon, ranch
+        </div>
+        <div class="menu-item-header">
+          Shoobie
+        </div>
+        <div class="menu-item-desc">
+          The day tripping dog, changes every day
+        </div>
+        <div class="menu-item-header">
+          Promenade
+        </div>
+        <div class="menu-item-desc">
+          Relish, yellow mustard, bacon
+        </div>
+        <div class="menu-item-header">
+          Hank Dog
+        </div>
+        <div class="menu-item-desc">
+          Sea Isle's famous cilantro Hank Sauce, mango chutney, diced onions
+        </div>
+        <div class="menu-item-header">
+          75th Street
+        </div>
+        <div class="menu-item-desc">
+          Chedder, bbq sauce, real bacon crumbles
+        </div>
+      </div>
+      <div class="col-md-12">
+        <h1 class="menu-section">Extra Eats</h1>
+        <div class="col">
+          <div class="menu-item-header">
+            The Original Walking Taco
+          </div>
+          <div class="menu-item-desc">
+            Our take on a hard shell taco. Fritos, homemade seasoned ground beef, cheddar, homemade pica de gallo
+          </div>
+        </div>
+        <div class="col">
+          <div class="menu-item-header">
+            Fritos and Herrs chips
+            <br>
+            Ice cold drinks 
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
