@@ -20,30 +20,28 @@
 
   <!-- Site font -->
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+  <script defer src="./js/nav-manager.js"></script>
 </head>
 
-<body>
+<body id="top">
   <div class="container-fluid">
     <div id="nav" class="row">
-      <a href="#nav" class="col-sm nav-item">Home</a>
-      <a href="#about" class="col-sm nav-item">About</a>
-      <a href="#menu" class="col-sm nav-item">Menu</a>
-      <a href="#gallery" class="col-sm nav-item">Gallery</a>
+      <a href="#top" class="col-sm nav-item" onclick="showMenu(false)">Home</a>
+      <a href="#about" class="col-sm nav-item" onclick="showMenu(false)">About</a>
+      <a href="#menu" class="col-sm nav-item" onclick="showMenu(false)">Menu</a>
+      <!-- <a href="#gallery" class="col-sm nav-item" onclick="showMenu(false)">Gallery</a> -->
+    </div>
+    <div class="mobile-menu" onclick="showMenu(true)">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
     </div>
     <div class="row" id="home">
       <div class="top-wrapper">
         <div class="top-header">
           <div class="inner-logo"></div>
-
         </div>
-        <!-- <div class="top-stores">
-          <div class="store-wrapper">
-            <a href="#" class="main-shop"></a>
-          </div>
-          <div class="store-wrapper">
-            <a href="#" class="lou-wall"></a>
-          </div>
-        </div> -->
       </div>
     </div>
     <div class="row" id="about">
@@ -145,8 +143,7 @@
         <div class="col">
           <div class="menu-item-header">
             Fritos and Herrs chips
-            <br>
-            Ice cold drinks 
+            <br> Ice cold drinks
           </div>
         </div>
       </div>

@@ -1,3 +1,9 @@
+#nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
 .nav-item {
     text-align: center;
     background-color: #EF3A42;
@@ -13,9 +19,26 @@
     background-color: #b32b31;
 }
 
-a:hover{
+a:hover {
     color: white;
     text-decoration: initial;
     cursor: pointer;
     background-color: #b32b31;
+}
+
+.mobile-menu{
+    position: fixed;
+    height: 5vh;
+    z-index: 99;
+}
+
+.hamburger{
+    background-color: #EF3A42;
+    height: 0.4em;
+    width: 2.5em;
+    color: #EF3A42;
+    display: block;
+    border: transparent;
+    border-radius: 3px;
+    margin: 5px 0px;
 }
