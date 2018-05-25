@@ -1,13 +1,13 @@
 let screenHeight, screenWidth;
-screenHeight = screen.height;
-screenWidth = screen.width;
+screenHeight = window.height;
+screenWidth = window.innerWidth;
 
 if (screenWidth <= 575) {
     document.getElementById('nav').style.transform = ('translateY(-200px)');
 }
 
 window.addEventListener('resize', () => {
-    screenWidth = screen.width;
+    screenWidth = window.innerWidth;
     setScreenSize(screenWidth);
 });
 
