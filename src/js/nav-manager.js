@@ -1,10 +1,8 @@
-var screenHeight, screenWidth;
+let screenHeight, screenWidth;
 screenHeight = screen.height;
 screenWidth = screen.width;
 
 if (screenWidth <= 575) {
-    console.log('Hit');
-
     document.getElementById('nav').style.transform = ('translateY(-200px)');
 }
 
