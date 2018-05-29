@@ -1,6 +1,6 @@
 .top-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 .top-header {
@@ -16,41 +16,7 @@
     height: 100%;
 }
 
-.top-stores {
-    height: 25%;
-    display: flex;
+.top-store-info{
+    height: 20vh;
+    text-align: center;
 }
-
-.store-wrapper {
-    flex: 1 1 auto;
-}
-
-.main-shop {
-    background-image: url('./../img/main-shop.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    display: inherit;
-    /* filter: blur(3px) grayscale(50%);
-    transition: filter 100ms ease-in-out; */
-}
-
-/* .main-shop:hover{
-    filter: blur(0px) grayscale(0%);
-} */
-
-.lou-wall {
-    background-image: url('./../img/lou-wall.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    display: inherit;
-    /* filter: blur(3px) grayscale(50%);
-    transition: filter 100ms ease-in-out; */
-}
-
-/* .lou-wall:hover {
-    filter: blur(0px) grayscale(0%);
-} */
