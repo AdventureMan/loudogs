@@ -1,0 +1,22 @@
+.top-wrapper {
+    width: 100vw;
+    height: 80vh;
+}
+
+.top-header {
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.inner-logo {
+    background-image: url('./../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 100%;
+}
+
+.top-store-info{
+    height: 20vh;
+    text-align: center;
+}

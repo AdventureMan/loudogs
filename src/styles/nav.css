@@ -1,0 +1,48 @@
+#nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: transform 200ms ease-in;
+    -webkit-transition: transform 200ms ease-in;
+    -o-transition: transform 200ms ease-in;
+    -moz-transition: transform 200ms ease-in;
+}
+
+.nav-item {
+    text-align: center;
+    background-color: #EF3A42;
+    color: white;
+    transition: background-color 300ms ease;
+    -webkit-transition: background-color 300ms ease;
+    height: 5vh;
+    padding-top: 0.5%;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: #b32b31;
+}
+
+a:hover {
+    color: white;
+    text-decoration: initial;
+    cursor: pointer;
+    background-color: #b32b31;
+}
+
+.mobile-menu{
+    position: fixed;
+    height: 5vh;
+    z-index: 99;
+}
+
+.hamburger{
+    background-color: #EF3A42;
+    height: 0.4em;
+    width: 2.5em;
+    color: #EF3A42;
+    display: block;
+    border: transparent;
+    border-radius: 3px;
+    margin: 5px 0px;
+}

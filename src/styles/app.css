@@ -1,0 +1,27 @@
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.content-title {
+    text-align: center;
+    color: #EF3A42;
+}
+
+@media screen and (max-width: 575px) {
+    .content-body {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .content-body {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+#content-body-bang {
+    font-size: 1.5rem;
+    color: #EF3A42;
+}

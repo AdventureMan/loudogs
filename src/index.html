@@ -1,14 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Loudogs</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <title>Lou Dogs</title>
+  <meta charset="UTF-8">
+  <meta name="group" content="Lou Dogs">
+  <meta name="author" content="Matt Keenan">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Mmmmm....Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+
+  <!-- Tasty Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="styles/app.css">
+  <link rel="stylesheet" type="text/css" href="styles/nav.css">
+  <link rel="stylesheet" type="text/css" href="styles/menu.css">
+  <link rel="stylesheet" type="text/css" href="styles/home.css">
+
+  <!-- Site font -->
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+  <script defer src="./js/nav-manager.js"></script>
 </head>
-<body>
-  <app-root></app-root>
+
+<body id="top">
+  <div class="container-fluid">
+    <div id="nav" class="row">
+      <a href="#top" class="col-sm nav-item" onclick="showMenu(false)">Home</a>
+      <a href="#about" class="col-sm nav-item" onclick="showMenu(false)">About</a>
+      <a href="#menu" class="col-sm nav-item" onclick="showMenu(false)">Menu</a>
+      <!-- <a href="#gallery" class="col-sm nav-item" onclick="showMenu(false)">Gallery</a> -->
+    </div>
+    <div class="mobile-menu" onclick="showMenu(true)">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </div>
+    <div class="row" id="home">
+      <div class="col-md-12">
+        <div class="top-wrapper">
+          <div class="top-header">
+            <div class="inner-logo"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 top-store-info">
+        <h6>The Original Shop</h6>
+        <h6>38th & Pleasure</h6>
+        <h6>11:00am - 6:00pm Everyday</h6>
+      </div>
+      <div class="col-md-6 top-store-info">
+        <h6>The Lou Wall</h6>
+        <h6>40th & Landis</h6>
+        <h6>7:00pm - 3:00am Friday, Saturday, Sunday</h6>
+      </div>
+    </div>
+    <div class="row" id="about">
+      <div class="col">
+        <h1 class="content-title">The Lou Dogs Story</h1>
+        <p class="content-body">It began in the summer of 1982. That's when Lou Subashi opened up a hot dog cart on 75th street Beach in Sea Isle
+          City. Before you could spit out an order for...
+        </p>
+        <h1 id="content-body-bang">"a dog with German mustard, ketchup, diced onions and a hint of kraut to taste"</h1>
+        <p class="content-body">
+          ... the LouDog was born.
+        </p>
+        <p class="content-body">
+          It quickly became more than just a local business, but instead a family, community, a go-to in Sea Isle. That famous cart
+          stood on 75th Street for 28 years. The dedication and loyalty of Lou Dog customers allowed us to expand our menu
+          and open up a shop located right in the heart of town on 38th & Pleasure with the same dogs, still on that famous
+          roll... babe!
+        </p>
+      </div>
+    </div>
+    <div class="row" id="menu">
+      <h1 class="col-md-12 content-title">Menu</h1>
+      <div class="col">
+        <h1 class="menu-section">Loyal Dogs</h1>
+        <div class="menu-item-header">
+          Lou Dog
+        </div>
+        <div class="menu-item-desc">
+          Lou's german mustard, ketchup, diced onions, and a hint of kraut to taste
+        </div>
+        <div class="menu-item-header">
+          Lassie
+        </div>
+        <div class="menu-item-desc">
+          Homemade mac & cheese, chipotle ketchup
+        </div>
+        <div class="menu-item-header">
+          British Bulldog
+        </div>
+        <div class="menu-item-desc">
+          Chedder, mom's homemade chili
+        </div>
+        <div class="menu-item-header">
+          Toto
+        </div>
+        <div class="menu-item-desc">
+          Honey mustard, bacon crumbles, diced onions
+        </div>
+        <div class="menu-item-header">
+          Rin Tin Tin
+        </div>
+        <div class="menu-item-desc">
+          Lou's german mustard, kraut, diced onions
+        </div>
+      </div>
+      <div class="col">
+        <h1 class="menu-section">Local Dogs</h1>
+        <div class="menu-item-header">
+          38th & Pleasure
+        </div>
+        <div class="menu-item-desc">
+          Cheddar, bacon, ranch
+        </div>
+        <div class="menu-item-header">
+          Shoobie
+        </div>
+        <div class="menu-item-desc">
+          The day tripping dog, changes every day
+        </div>
+        <div class="menu-item-header">
+          Promenade
+        </div>
+        <div class="menu-item-desc">
+          Relish, yellow mustard, bacon
+        </div>
+        <div class="menu-item-header">
+          Hank Dog
+        </div>
+        <div class="menu-item-desc">
+          Sea Isle's famous cilantro Hank Sauce, mango chutney, diced onions
+        </div>
+        <div class="menu-item-header">
+          75th Street
+        </div>
+        <div class="menu-item-desc">
+          Chedder, bbq sauce, real bacon crumbles
+        </div>
+      </div>
+      <div class="col-md-12">
+        <h1 class="menu-section">Extra Eats</h1>
+        <div class="col">
+          <div class="menu-item-header">
+            The Original Walking Taco
+          </div>
+          <div class="menu-item-desc">
+            Our take on a hard shell taco. Fritos, homemade seasoned ground beef, cheddar, homemade pica de gallo
+          </div>
+        </div>
+        <div class="col">
+          <div class="menu-item-header">
+            Fritos and Herrs chips
+            <br> Ice cold drinks
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
