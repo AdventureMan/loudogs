@@ -1,16 +1,27 @@
-.menu-item-header{
+.menu-item-header {
     text-align: center;
     color: #EF3A42;
 }
 
-.menu-item-desc{
+.menu-item-desc {
     text-align: center;
     color: black;
 }
-.centerer{
+
+.centerer {
     text-align: center;
 }
 
-.menu-section{
+.menu-section {
     text-align: center;
+}
+
+#pdf-title {
+    text-align: center;
+    color: #99242a;
+}
+
+#pdf-title:hover {
+    background-color: transparent;
+    color: #99242a;
 }
