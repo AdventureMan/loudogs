@@ -1,11 +1,24 @@
-#nav {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    transition: transform 200ms ease-in;
-    -webkit-transition: transform 200ms ease-in;
-    -o-transition: transform 200ms ease-in;
-    -moz-transition: transform 200ms ease-in;
+@media screen and (max-width: 575px) {
+    #nav {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        transform: translateY(-200px);
+        transition: transform 200ms ease-in;
+        -webkit-transition: transform 200ms ease-in;
+        -o-transition: transform 200ms ease-in;
+        -moz-transition: transform 200ms ease-in;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #nav {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        transform: translateY(0px);
+
+    }
 }
 
 .nav-item {
@@ -30,13 +43,13 @@ a:hover {
     background-color: #b32b31;
 }
 
-.mobile-menu{
+.mobile-menu {
     position: fixed;
     height: 5vh;
     z-index: 99;
 }
 
-.hamburger{
+.hamburger {
     background-color: #EF3A42;
     height: 0.4em;
     width: 2.5em;
