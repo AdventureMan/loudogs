@@ -20,7 +20,7 @@ if (screenWidth <= 575) {
 // }
 
 function showMenu(isShowing) {
-    screenWidth = screen.width;
+    screenWidth = window.innerWidth;
     if (screenWidth > 575) { return; }
     if (isShowing === true) {
         document.getElementById('nav').style.transform = ('translateY(0px)');
